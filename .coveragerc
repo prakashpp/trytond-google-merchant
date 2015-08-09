@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.google_merchant
+
+[report]
+omit = */tests/*, */setup.py
