@@ -82,7 +82,10 @@ minor_version = int(minor_version)
 
 requires = []
 
-MODULE2PREFIX = {}
+MODULE2PREFIX = {
+    "sale_channel": "fio",
+    "nereid_webshop": "fio",
+}
 
 MODULE = "google_merchant"
 PREFIX = "fio"

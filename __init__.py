@@ -7,8 +7,16 @@
 """
 from trytond.pool import Pool
 
+from product import Product, ProductGoogleTaxonomyRel, Attribute, GoogleTaxonomy
+from channel import Channel
+
 
 def register():
     Pool.register(
+        GoogleTaxonomy,
+        ProductGoogleTaxonomyRel,
+        Product,
+        Attribute,
+        Channel,
         module='google_merchant', type_='model'
     )
